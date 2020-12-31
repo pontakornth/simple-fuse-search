@@ -9,6 +9,7 @@ interface BookDetailProps {
 const bookDetailStyle = () => ({
     padding: "1rem",
     border: "1px solid dodgerblue",
+    marginTop: "1rem"
 })
 
 const BookDetail = ({ book }: BookDetailProps) => {
