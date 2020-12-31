@@ -1,4 +1,6 @@
 import { useState, ChangeEvent } from "react";
+import Container from "./components/Container";
+import Input from "./components/Input";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,8 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <input className="search-input" value={searchTerm} onChange={handleChange} />
-      { searchTerm }
+      <Container>
+        <Input value={searchTerm} onChange={handleChange}></Input>
+        { searchTerm }
+      </Container>
     </div>
   );
 }
